@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+        <button (click)="logOut()" ion-button icon-only>
+          <ion-icon name="log-out" class="bounce"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-item icon-start>
+      <ion-icon name="contact"></ion-icon>
+      Full Name : {{userdata[0].full_name}}
+    </ion-item>
+    <ion-item icon-start>
+      <ion-icon name="person"></ion-icon>
+      Username : {{userdata[0].username}}
+    </ion-item>
+    <ion-item icon-start>
+      <ion-icon name="at"></ion-icon>
+      Email : {{userdata[0].email}}
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+	<ion-header no-border>
+		<ion-navbar hideBackButton="true" transparent>
+		</ion-navbar>
+	</ion-header>
+	<div padding>
+		<ion-row>
+			<ion-col class="wave">
+				<img class="logo" src="./assets/imgs/rocket.png" />
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<ion-list inset class="no-border">
+					<ion-item class="animate-in-primary">
+						<ion-input type="text" placeholder="Full Name" #fullname></ion-input>
+					</ion-item>
+
+					<ion-item class="animate-in-primary">
+						<ion-input type="email" placeholder="Email" #email></ion-input>
+					</ion-item>
+
+					<ion-item class="animate-in-primary">
+						<ion-input type="text" placeholder="Username" #username></ion-input>
+					</ion-item>
+
+					<ion-item class="animate-in-primary">
+						<ion-input type="password" placeholder="Password" #password></ion-input>
+					</ion-item>
+				</ion-list>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<button ion-button class="login-button bounce" (click)="Register()">Register</button>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<div (click)="toLogin()">
+					<span>Or back to login.</span>
+				</div>
+			</ion-col>
+		</ion-row>
+	</div>
+</ion-content>
