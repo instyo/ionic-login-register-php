@@ -10,4 +10,5 @@ How to build :
 1. run ionic cordova build android
 
 For preview :
-<iframe width="1425" height="572" src="https://www.youtube.com/embed/QtQjgG9R9P0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[![Alt text](https://img.youtube.com/vi/QtQjgG9R9P0/0.jpg)](https://www.youtube.com/watch?v=QtQjgG9R9P0)
